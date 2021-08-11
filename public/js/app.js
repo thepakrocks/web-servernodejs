@@ -29,7 +29,7 @@ const location = search.value
 messageone.textContent='Loading ...'
 messagetwo.textContent=''
 
-fetch('http://localhost:3000/weather?address='+location+'').then((response)=>{
+fetch('/weather?address='+location+'').then((response)=>{  //http://localhost:3000 hatyo heroko bata run huda
 
 response.json().then((data)=>{
     if(data.error)
